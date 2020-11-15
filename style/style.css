@@ -1,0 +1,286 @@
+html{
+    color: #d9e1ff;
+    overflow: hidden;
+    font-family: "Evolventa";
+}
+body{
+    background-color: #242b46;
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header h1{
+    z-index: 2;
+    margin-top: 2%;
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+}
+.small{
+    background-position:center;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 99;
+}
+.navbar__earth:hover {
+    box-shadow: 0 0 30px #2e5af869;
+    filter: grayscale(00%);
+}
+.navbar__moon:hover {
+    box-shadow: 0 0 30px #2e5af869;
+}
+.small1{
+    position: absolute;
+    animation: small1 25s  infinite alternate linear;
+}
+.small3__rotate{
+    position: absolute;
+    animation: small3rotate 25s  infinite alternate linear;
+}
+.small2__rotate{
+    position: absolute;
+    animation: small2 25s  infinite alternate linear;
+}
+.metheors, .navbar, .foreground__big-stars, h1, .background{
+    position: absolute;
+    margin-top: 0;
+}
+@font-face{
+    font-family: "Evolventa";
+    src: url(../assets/fonts/evolventa.ttf);
+}
+.navbar{
+    position: absolute;
+    z-index: 97;
+    display: flex;
+    width: 100%;
+    height:100%;
+    justify-content: center;
+    top:20%;
+}
+.navbar__earth{
+    animation: navrotate 25s  infinite reverse linear;
+    margin: 23%;
+    transition: all 2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 50px #d9e1ff69;
+    font-size: 47px;
+    border-radius: 50%; 
+    background-image: url(../assets/img/Earth.png);
+    background-position: center;
+    width: 54%;
+    height: 54%;
+    filter: grayscale(30%);
+    background-repeat: no-repeat;
+}
+.navbar__moon{
+    animation: navrotate 25s  infinite reverse linear;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 50px #d9e1ff69;
+    font-size: 35px;
+    margin-left: 50%;
+    margin-top: -14%;
+    border-radius: 50%; 
+    background-image: url(../assets/img/Moon.png);
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+.navbarcontainer{
+    text-shadow: 1px 1px 4px #000000;
+    width: 663px;
+    height: 663px;
+    background-image: url(../assets/img/dashes.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: navrotate 25s  infinite forwards linear;
+}
+.big1{
+    animation: big112 15s  infinite alternate linear;
+    z-index: 101;
+    position: fixed;
+}
+.big2{
+    animation: big111 25s  infinite alternate linear;
+    top: 60%;
+    left: -20%;
+    z-index: 100;
+    position: fixed;
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 3s ease-in-out;
+}
+.navbar__item1{
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    text-shadow: 1px 1px 4px #000000;
+}
+.navbar__item2{
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.navbar__item1:hover{
+    transform: scale(1.05);
+}
+.navbar__item2:hover{
+    transform: scale(1.05);
+}
+.background__little-stars{
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/Lstars.png);
+    z-index: 0;
+    background-size: cover;
+}
+.foreground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/bstars.png);
+    z-index: 96;
+    background-size: cover;
+    transition: all 3s ease-in-out;
+}
+.fgR{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.background{
+    z-index: 0;
+}
+.small2R{
+    position: absolute;
+    animation: small2R 35s  infinite alternate linear;
+}
+.small2{
+    z-index: 2;
+    position: absolute;
+    animation: small2 35s  infinite alternate linear;
+}
+.small3R{
+    position: absolute;
+    animation: small3R 55s  infinite alternate linear;
+}
+.small3{
+    z-index: 2;
+    top: 80vh;
+    position: absolute;
+    animation: small3 55s  infinite alternate linear;
+}
+@keyframes big112{
+    0%{
+        transform: rotate(-10deg) translate(-100%, -100%);
+    }
+    100%{
+        transform: rotate(-40deg) translate(200%, 000%);
+    }
+}
+@keyframes big111{
+    0%{
+        transform: rotate(-30deg) translate(-40%, 10%);
+    }
+    30%{
+        transform: rotate(25deg) translate(100%, 50%);
+    }
+    60%{
+        transform: rotate(35deg) translate(200%, -200%);
+    }
+    100%{
+        transform: rotate(45deg) translate(300%, -100%);
+    }
+}
+@keyframes navrotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes small1{
+    0%{
+        transform: rotate(-10deg) translate(0, 50%);
+    }
+    100%{
+        transform: rotate(-40deg) translate(900%, 300%);
+    }
+}
+@keyframes small2R{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(300deg);
+    }
+}
+@keyframes small2{
+    0%{
+        transform: translate(0, 0%);
+    }
+    40%{
+        transform: translate(100vw, 30vh);
+    }
+    63%{
+        transform: translate(50vw, 100vh);
+    }
+    100%{
+        transform: translate(-10vw, -2vh);
+    }
+}
+@keyframes small3R{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(200deg);
+    }
+}
+@keyframes small3{
+    0%{
+        transform: translate(0, 0%);
+    }
+    40%{
+        transform: translate(110vw, 25vh);
+    }
+    63%{
+        transform: translate(50vw, 100vh);
+    }
+    100%{
+        transform: translate(-10vw, -2vh);
+    }
+}
+.jupiter{
+    position: fixed;
+    z-index: 102;
+    left: -90%;
+    transition: all 4s ease-in-out;
+}
+.jpIMG{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 1600px){
+    .navbarcontainer{
+        width: 550px;
+        height: 550px;
+    }
+    .navbar__item1{
+        font-size: 40px;
+    }
+}
+nav{
+    transition: 1s ease-in-out;
+}
