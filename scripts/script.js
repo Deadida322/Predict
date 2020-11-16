@@ -1,6 +1,40 @@
 function onl(){
     window.scrollBy(-100,-100);
 }
+function getRandomInRangeP (min, max) {
+	var totalNumbers 		= max - min + 1,
+		arrayTotalNumbers 	= [],
+		arrayRandomNumbers 	= [],
+		tempRandomNumber;
+
+	while (totalNumbers--) {
+		arrayTotalNumbers.push(totalNumbers + min);
+	}
+
+	while (arrayTotalNumbers.length) {
+		tempRandomNumber = Math.round(Math.random() * (arrayTotalNumbers.length - 1));
+		arrayRandomNumbers.push(arrayTotalNumbers[tempRandomNumber]);
+		arrayTotalNumbers.splice(tempRandomNumber, 1);
+	}
+
+	return arrayRandomNumbers;
+}
+
+
+function getRandomInRange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+function generater(firstInt){
+    let nextInt = getRandomInRange(1, 5);
+    for(let i = 1; i <=5; i++){
+        nextInt = getRandomInRange(1, 5);
+        if (nextInt == firstInt){
+            break;
+        }
+    }
+    return nextInt;
+
+}
 document.addEventListener("DOMContentLoaded", function() {
     window.scrollBy(-100,-100);
   });
@@ -94,5 +128,70 @@ $('.navbar__item1').on("click", function fadeou (e){
         left: '150vw'
     });
     setTimeout(() => ea.css({filter: 'grayscale(80%)',}), 300);
+    firstInt = getRandomInRange(1, 5);
+    secondInt = generater(firstInt);
+    thirdInt = generater(firstInt);
+    console.log(firstInt, secondInt, thirdInt);
+});
+$('.navbar__item2').on("click", function fadeou2 (e){
+    let bg = $('.background');
+    let fg = $('.foreground');
+    let colors = $('.colors');
+    bg.css({
+        transform: 'rotate(-15deg)',
+    });
+    fg.css({
+        transform: 'rotate(-15deg)',
+    });
+    colors.css({
+        transform: 'rotate(-15deg)',
+    });
+    let nav = $('nav');
+    let tp = $('.tp');
+    let jp = $('.jupiter');
+    h = $('h1'); 
+    firstInt = getRandomInRange(1, 5);
+    secondInt = generater(firstInt);
+    thirdInt = generater(firstInt);
+    console.log(firstInt, secondInt, thirdInt);
 
+    setTimeout(() => nav.fadeOut(0), 2000);
+    setTimeout(() => h.fadeOut(100), 1800);
+    setTimeout(() => h.fadeIn(100), 2000);
+    setTimeout(() => jp.fadeOut(100), 3000);
+    setTimeout(() => h.html('Предсказания'), 2000);
+    setTimeout(() => $('.circle1').html(firstInt),1000);
+    setTimeout(() =>tp.css({
+        display: 'flex'
+    }),2000);
+    jp.css({
+        transform: 'rotate(180deg) scale(2)',
+        left: '150vw'
+    });
+    setTimeout(() => $('.circle1').html(firstInt),2600);
+    setTimeout(() => $('.circle2').html(secondInt),3100);
+    setTimeout(() => $('.circle3').html(thirdInt),3200);
+    $(".digitTXT").css({
+        transition: 'all 10s easy-in',
+        transform: 'scale(1.0)',
+    });
+    setTimeout( function tp() {$('.circle1').css({
+        animation: "c1 1s  1 forwards ease-in-out"
+    }, 00);
+    setTimeout(() =>$('.circle2').css({
+        animation: "c1 1s  1 forwards ease-in-out"
+    }), 200);
+    setTimeout(() =>$('.circle3').css({
+        animation: "c1 1s  1 forwards ease-in-out"
+    }), 400);
+    
+    var txtD = 0;
+    if ( firstInt == secondInt && secondInt == thirdInt){
+        txtD = "Три " + firstInt+' твоё счастье, кто возьмёт тому несчастье, твоё счастье будет завтра';
+    }
+    else{
+        txtD = 'Попробуй в другой раз';
+    }
+    setTimeout(() => $('.digitTXT').html(txtD),1500);}, 2500);
+    
 });
