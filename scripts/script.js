@@ -134,6 +134,7 @@ $('.navbar__item1').on("click", function fadeou (e){
     console.log(firstInt, secondInt, thirdInt);
 });
 $('.navbar__item2').on("click", function fadeou2 (e){
+    let times = ['сегодня', 'завтра', 'завтра вечером', 'сегодня вечером', 'после шести часов', 'немножко позже', 'завтра утром', 'определённо на этой неделе', 'скоро, нужно подождать', 'после 4 часов', 'в 6 часов', 'в 19 вечера'];
     let bg = $('.background');
     let fg = $('.foreground');
     let colors = $('.colors');
@@ -154,6 +155,7 @@ $('.navbar__item2').on("click", function fadeou2 (e){
     secondInt = generater(firstInt);
     thirdInt = generater(firstInt);
     console.log(firstInt, secondInt, thirdInt);
+    let timesS = times[Math.floor(Math.random() * times.length)];
 
     setTimeout(() => nav.fadeOut(0), 2000);
     setTimeout(() => h.fadeOut(100), 1800);
@@ -187,7 +189,7 @@ $('.navbar__item2').on("click", function fadeou2 (e){
     
     var txtD = 0;
     if ( firstInt == secondInt && secondInt == thirdInt){
-        txtD = "Три " + firstInt+' твоё счастье, кто возьмёт тому несчастье, твоё счастье будет завтра';
+        txtD = "Три " + firstInt+' твоё счастье, кто возьмёт тому несчастье, твоё счастье будет '+ timesS;
     }
     else{
         txtD = 'Попробуй в другой раз';
