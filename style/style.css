@@ -316,7 +316,7 @@ nav{
     position: absolute;
     display: flex;
     opacity: 0%;
-    margin-top: 8%;
+    margin-top: 7%;
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -355,7 +355,8 @@ nav{
 .DayPhoto{
     display: flex;
     justify-content: center;
-    max-height: 42% ;
+    max-height: 40% ;
+    margin-top: -1%;
     margin-right: -30%;
     transition: all 1.5s ease-in-out;
     opacity: 0;
