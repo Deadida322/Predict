@@ -49,7 +49,8 @@ addEventListener('mousemove', function parallax(){
         transform: `translate(${posX/100}%,${posY/100}%)`
     });
 });
-$(document).mousemove(function(event){
+if (document.documentElement.clientWidth > 500){
+    $(document).mousemove(function(event){
     e = event;
     let mstars = $('.background__little-stars');
     let bstars = $('.foreground');
@@ -71,6 +72,7 @@ $(document).mousemove(function(event){
         transform: `translate(${posX/2000}%,${0}%)`
     });
   });
+}
 
 $('.navbar__item1').on("click", function fadeou (e){
     let nav = $('nav');

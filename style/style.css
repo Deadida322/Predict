@@ -700,5 +700,7 @@ nav{
     .background__little-stars{
         background-image: url(../assets/img/Lstarsm.png);
     }
-
+    .DF{
+        display: none;
+    }
 }
