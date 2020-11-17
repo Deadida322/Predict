@@ -265,7 +265,7 @@ body{
 .jupiter{
     position: fixed;
     z-index: 102;
-    left: -85%;
+    left: -85%; 
     transition: all 4s ease-in-out;
 }
 .jpIMG{
@@ -702,6 +702,9 @@ nav{
         background-image: url(../assets/img/Lstarsm.png);
     }
     .DF{
+        display: none;
+    }
+    .colors{
         display: none;
     }
 }
