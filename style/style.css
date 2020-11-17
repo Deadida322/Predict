@@ -637,7 +637,7 @@ nav{
         height: 300px;
     }
     .navbar__item1{
-        font-size: 17px;
+        font-size: 21px;
     }
     .navbar{
         top:30%
@@ -696,6 +696,7 @@ nav{
     }
     .im{
         max-width: 95%;
+        min-height: auto;
     }
     .background__little-stars{
         background-image: url(../assets/img/Lstarsm.png);

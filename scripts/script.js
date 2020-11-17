@@ -132,7 +132,7 @@ $('.navbar__item1').on("click", function fadeou (e){
         });
     } else if (document.documentElement.clientWidth <= 500){
         jp.css({
-            transform: 'rotate(180deg) scale(2)',
+            transform: 'rotate(80deg) scale(2)',
             left: '400vw'
         });
     };
