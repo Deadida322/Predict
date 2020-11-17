@@ -109,11 +109,11 @@ $('.navbar__item1').on("click", function fadeou (e){
         marginRight: '0%',
         opacity: '100%'
     }), 2000);
-    setTimeout(() => nav.fadeOut(0), 2000);
-    setTimeout(() => h.fadeOut(100), 1800);
-    setTimeout(() => h.fadeIn(100), 2000);
+    setTimeout(() => nav.fadeOut(0), 1800);
+    setTimeout(() => h.fadeOut(100), 1600);
+    setTimeout(() => h.fadeIn(100), 1800);
     setTimeout(() => jp.fadeOut(100), 3000);
-    setTimeout(() => h.html('Предсказания'), 2000);
+    setTimeout(() => h.html('Предсказания'), 1800);
     bg.css({
         transform: 'rotate(-15deg)',
     });
@@ -125,7 +125,7 @@ $('.navbar__item1').on("click", function fadeou (e){
     });
     jp.css({
         transform: 'rotate(180deg) scale(2)',
-        left: '150vw'
+        left: '200vw'
     });
     setTimeout(() => ea.css({filter: 'grayscale(80%)',}), 300);
     firstInt = getRandomInRange(1, 5);
@@ -157,25 +157,25 @@ $('.navbar__item2').on("click", function fadeou2 (e){
     console.log(firstInt, secondInt, thirdInt);
     let timesS = times[Math.floor(Math.random() * times.length)];
 
-    setTimeout(() => nav.fadeOut(0), 2000);
-    setTimeout(() => h.fadeOut(100), 1800);
-    setTimeout(() => h.fadeIn(100), 2000);
+    setTimeout(() => nav.fadeOut(0), 1800);
+    setTimeout(() => h.fadeOut(100), 1600);
+    setTimeout(() => h.fadeIn(100), 1800);
     setTimeout(() => jp.fadeOut(100), 3000);
-    setTimeout(() => h.html('Предсказания'), 2000);
+    setTimeout(() => h.html('Цифры'), 1800);
     setTimeout(() => $('.circle1').html(firstInt),1000);
     setTimeout(() =>tp.css({
         display: 'flex'
-    }),2000);
+    }),1800);
     jp.css({
-        transform: 'rotate(180deg) scale(2)',
-        left: '150vw'
+        transform: 'rotate(180deg) scale(2.0)',
+        left: '200vw'
     });
     setTimeout(() => $('.circle1').html(firstInt),2600);
     setTimeout(() => $('.circle2').html(secondInt),3100);
     setTimeout(() => $('.circle3').html(thirdInt),3200);
     $(".digitTXT").css({
-        transition: 'all 10s easy-in',
-        transform: 'scale(1.0)',
+        opacity: '100%',
+        
     });
     setTimeout( function tp() {$('.circle1').css({
         animation: "c1 1s  1 forwards ease-in-out"

@@ -265,7 +265,7 @@ body{
 .jupiter{
     position: fixed;
     z-index: 102;
-    left: -90%;
+    left: -85%;
     transition: all 4s ease-in-out;
 }
 .jpIMG{
@@ -355,18 +355,7 @@ nav{
     opacity: 0;
 }
 
-@media screen and (max-width: 1600px){
-    .navbarcontainer{
-        width: 550px;
-        height: 550px;
-    }
-    .navbar__item1{
-        font-size: 40px;
-    }
-    h1{
-        font-size: 50px;
-    }
-}
+
 .tp{
     position: absolute;
     display: none;
@@ -410,8 +399,7 @@ nav{
     min-height: 7%;
     text-align: center;
     border-radius: 8px;
-    transform: scale(0.2);
-    transition: all 5s ease-in-out;
+    opacity: 0;
 }
 .circle1{
 }
@@ -436,3 +424,210 @@ nav{
     }
 }
 
+@media screen and (max-width: 1600px){
+    .navbarcontainer{
+        width: 550px;
+        height: 550px;
+    }
+    .navbar__item1{
+        font-size: 40px;
+    }
+    .header h1{
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 1400px){
+    .navbarcontainer{
+        width: 400px;
+        height: 400px;
+    }
+    .navbar__item1{
+        font-size: 30px;
+    }
+    .navbar{
+        top:25%
+    }
+    .header h1{
+        font-size: 60px;
+    }
+    .navbar__moon{
+        font-size: 25px;
+        width: 100px;
+        height: 100px;
+    }
+    .sp > h2{
+        font-size: 25px;
+    }
+    .predicts{
+        font-size: 18px;
+    }
+    .digits__container{
+        margin-top: 7%;
+    }
+    .circle{
+        width: 150px;
+        font-size: 150px;
+        height: 150px;
+    }
+    .jpIMG{
+        width: 50%;
+        height: 50%;
+    }
+    .small{
+        width: 100px;
+    }
+    .big{
+        width: 450px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .navbarcontainer{
+        width: 350px;
+        height: 350px;
+    }
+    .navbar__item1{
+        font-size: 25px;
+    }
+    .navbar{
+        top:25%
+    }
+    .header h1{
+        font-size: 55px;
+    }
+    .navbar__moon{
+        font-size: 20px;
+        width: 80px;
+        height: 80px;
+    }
+    .sp > h2{
+        font-size: 22px;
+    }
+    .predicts{
+        font-size: 18px;
+    }
+    .digits__container{
+        margin-top: 6%;
+    }
+    .circle{
+        width: 130px;
+        font-size: 130px;
+        height: 130px;
+    }
+    .jupiter{
+        left: -100%;
+    }
+    .small{
+        width: 90px;
+    }
+    .big{
+        width: 400px;
+    }
+    .digitTXT{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .navbarcontainer{
+        width: 300px;
+        height: 300px;
+    }
+    .navbar__item1{
+        font-size: 25px;
+    }
+    .navbar{
+        top:25%
+    }
+    .header h1{
+        font-size: 45px;
+    }
+    .navbar__moon{
+        font-size: 20px;
+        width: 80px;
+        height: 80px;
+    }
+    .sp > h2{
+        font-size: 18px;
+    }
+    .predicts{
+        padding-top: 2px;
+        font-size: 16px;
+        max-width: 70%;
+    }
+    .digits__container{
+        margin-top: 6%;
+    }
+    .circle{
+        width: 100px;
+        font-size: 100px;
+        height: 100px;
+    }
+    .jupiter{
+        left: -140%;
+    }
+    .small{
+        width: 80px;
+    }
+    .big{
+        width: 350px;
+    }
+    .digitTXT{
+        max-width: 70%;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 850px){
+    .navbarcontainer{
+        width: 250px;
+        height: 250px;
+    }
+    .navbar__item1{
+        font-size: 17px;
+    }
+    .navbar{
+        top:22%
+    }
+    .header h1{
+        font-size: 35px;
+    }
+    .navbar__moon{
+        font-size: 16px;
+        width: 60px;
+        height: 60px;
+    }
+    .sp > h2{
+        font-size: 16px;
+    }
+    .predicts{
+        padding-top: 2px;
+        font-size: 15px;
+        max-width: 80%;
+        max-height: 10%;
+    }
+    .digits__container{
+        margin-top: 6%;
+    }
+    .circle{
+        width: 80px;
+        font-size: 80px;
+        height: 80px;
+    }
+    .jupiter{
+        left: -140%;
+    }
+    .small{
+        width: 70px;
+    }
+    .big{
+        width: 300px;
+    }
+    .digitTXT{
+        max-width: 70%;
+        font-size: 16px;
+    }
+    .tp{
+        margin-top: 10%;
+    }    
+    .sp{
+        margin-top: 5%;
+    }  
+}
