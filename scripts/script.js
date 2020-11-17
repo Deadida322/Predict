@@ -123,10 +123,17 @@ $('.navbar__item1').on("click", function fadeou (e){
     colors.css({
         transform: 'rotate(-15deg)',
     });
-    jp.css({
-        transform: 'rotate(180deg) scale(2)',
-        left: '200vw'
-    });
+    if (document.documentElement.clientWidth > 500){
+        jp.css({
+            transform: 'rotate(180deg) scale(2)',
+            left: '200vw'
+        });
+    } else if (document.documentElement.clientWidth <= 500){
+        jp.css({
+            transform: 'rotate(180deg) scale(2)',
+            left: '400vw'
+        });
+    };
     setTimeout(() => ea.css({filter: 'grayscale(80%)',}), 300);
     firstInt = getRandomInRange(1, 5);
     secondInt = generater(firstInt);
@@ -166,10 +173,17 @@ $('.navbar__item2').on("click", function fadeou2 (e){
     setTimeout(() =>tp.css({
         display: 'flex'
     }),1800);
-    jp.css({
-        transform: 'rotate(180deg) scale(2.0)',
-        left: '200vw'
-    });
+    if (document.documentElement.clientWidth > 500){
+        jp.css({
+            transform: 'rotate(180deg) scale(2)',
+            left: '200vw'
+        });
+    } else if (document.documentElement.clientWidth <= 500){
+        jp.css({
+            transform: 'rotate(180deg) scale(2)',
+            left: '400vw'
+        });
+    };
     setTimeout(() => $('.circle1').html(firstInt),2600);
     setTimeout(() => $('.circle2').html(secondInt),3100);
     setTimeout(() => $('.circle3').html(thirdInt),3200);
