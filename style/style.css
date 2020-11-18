@@ -276,32 +276,16 @@ body{
 nav{
     transition: 1s ease-in-out;
 }
-.violet{
-    position: absolute;
-    background-color: rgba(69, 0, 158, 0.151);
-    width: 70%;
-    height: 50%;
-    top: 30%;
-    left: 15%;
-    border-radius:100% 0% 100% 0% /100% 0% 100% 0% ;
-    transform: rotate(30deg);
-    filter: blur(100px);
-}
-.pink{
-    position: absolute;
-    background-color: rgba(233, 0, 221, 0.062);
-    width: 40%;
-    height: 20%;
-    top: 45%;
-    left: 30%;
-    border-radius:100% 0% 100% 0% /100% 0% 100% 0% ;
-    transform: rotate(30deg);
-    filter: blur(50px);
-}
+
 .colors{
     position: absolute;
     width: 100%;
     height: 100%;
+    background-image: url(../assets/img/Colors.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 30%;
     transition: all 3s ease-in-out;
 }
 .sp{
