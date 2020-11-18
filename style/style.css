@@ -355,9 +355,25 @@ nav{
 .digits__container{
     margin-top: 10%;
     width: 40%;
-    height:  50%;
+    height:  30%;
     display: flex;
     justify-content: space-between;
+}
+.tomenu{
+    background-image: url(../assets/img/arr.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    animation: menurotate 1.5s  infinite forwards ease-in-out;
+    animation-delay: 0.2s;
+    transition: all 0.5s ease-in-out;
+}
+.tomenu:hover{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
 }
 
 .circle{
@@ -405,6 +421,17 @@ nav{
     100%{
         transform: translateX(0px);
         opacity: 100%;
+    }
+}
+@keyframes menurotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    60%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(-360deg);
     }
 }
 
@@ -647,7 +674,7 @@ nav{
     .digits__container{
         margin-top: 30%;
         width: 90%;
-        height: 50%;
+        height: 30%;
     }
     .circle{
         width: 90px;
@@ -670,9 +697,11 @@ nav{
     }
     .tp{
         margin-top: 25%;
+        z-index: 96;
     }    
     .sp{
         margin-top: 35%;
+        z-index: 96;
     }  
     .DayPhoto{
         max-width: 100%;

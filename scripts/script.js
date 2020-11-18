@@ -1,6 +1,9 @@
 function onl(){
     window.scrollBy(-100,-100);
 }
+function re(){
+    location.reload();
+}
 function getRandomInRangeP (min, max) {
 	var totalNumbers 		= max - min + 1,
 		arrayTotalNumbers 	= [],
@@ -120,7 +123,7 @@ $('.navbar__item1').on("click", function fadeou (e){
         transform: 'rotate(-15deg)',
     });
     fg.css({
-        transform: 'rotate(-15deg)',
+        transform: 'rotate(-13deg)',
     });
     colors.css({
         transform: 'rotate(-15deg)',
