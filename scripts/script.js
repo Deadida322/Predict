@@ -241,7 +241,7 @@ $('.makebeuty').on("click", function fadeou3 (e){
     setTimeout(() => h.html('Сделать красиво'), 1800);
     setTimeout(() => $('.downloadTXT').html('Устраняем неприятности...'), 4200)
     setTimeout(() => $('.downloadTXT').html('Закрываем долги...'), 6400)
-    setTimeout(() => $('.downloadTXT').html('Молимся богу...'), 7600)
+    setTimeout(() => $('.downloadTXT').html('Молимся богу...'), 7800)
     setTimeout(() => $('.downloadTXT').html('Вмещаем все знания человечества...'), 10800)
     setTimeout(() => $('.downloadTXT').html('Успешно!'), 13000)
     setTimeout(() =>fp.css({
