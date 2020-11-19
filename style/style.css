@@ -466,12 +466,13 @@ nav{
     border: 4px solid #001259;
 }
 .downloadIMAGE{
-    width:10%;
+    width:0%;
     height: 100%;
     background: rgb(91,11,222);
     background: linear-gradient(90deg, rgba(91,11,222,1) 0%, rgba(135,8,218,1) 35%);
     border-radius: 4px;
     animation: dwnld 10s  1 forwards ease-in-out;
+    animation-delay: 1s;
 }
 .downloadTXT{
     width:50%;

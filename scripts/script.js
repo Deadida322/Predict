@@ -233,18 +233,17 @@ $('.makebeuty').on("click", function fadeou3 (e){
     let fp = $('.fp');
     let jp = $('.jupiter');
     h = $('h1'); 
-
-
+    setTimeout(() => $('.makebeuty').fadeOut(100), 1400);
     setTimeout(() => nav.fadeOut(0), 1800);
     setTimeout(() => h.fadeOut(100), 1600);
     setTimeout(() => h.fadeIn(100), 1800);
     setTimeout(() => jp.fadeOut(100), 3000);
     setTimeout(() => h.html('Сделать красиво'), 1800);
-    setTimeout(() => $('.downloadTXT').html('Устраняем неприятности...'), 3200)
-    setTimeout(() => $('.downloadTXT').html('Закрываем долги...'), 5400)
+    setTimeout(() => $('.downloadTXT').html('Устраняем неприятности...'), 4200)
+    setTimeout(() => $('.downloadTXT').html('Закрываем долги...'), 6400)
     setTimeout(() => $('.downloadTXT').html('Молимся богу...'), 7600)
-    setTimeout(() => $('.downloadTXT').html('Вмещаем все знания человечества...'), 9800)
-    setTimeout(() => $('.downloadTXT').html('Успешно!'), 12000)
+    setTimeout(() => $('.downloadTXT').html('Вмещаем все знания человечества...'), 10800)
+    setTimeout(() => $('.downloadTXT').html('Успешно!'), 13000)
     setTimeout(() =>fp.css({
         display: 'flex'
     }),1800);
