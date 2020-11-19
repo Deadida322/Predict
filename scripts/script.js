@@ -78,6 +78,7 @@ if (document.documentElement.clientWidth > 500){
 }
 
 $('.navbar__item1').on("click", function fadeou (e){
+    setTimeout(() => $('.makebeuty').fadeOut(100), 1400);
     let nav = $('nav');
     let sp = $('.sp');
     let jp = $('.jupiter');
@@ -146,6 +147,7 @@ $('.navbar__item1').on("click", function fadeou (e){
     console.log(firstInt, secondInt, thirdInt);
 });
 $('.navbar__item2').on("click", function fadeou2 (e){
+    setTimeout(() => $('.makebeuty').fadeOut(100), 1400);
     let times = ['сегодня', 'завтра', 'завтра вечером', 'сегодня вечером', 'после шести часов', 'немножко позже', 'завтра утром', 'определённо на этой неделе', 'скоро, нужно подождать', 'после 4 часов', 'в 6 часов', 'в 19 вечера'];
     let bg = $('.background');
     let fg = $('.foreground');
