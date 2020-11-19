@@ -10,12 +10,41 @@ body{
     display: flex;
     justify-content: center;
 }
+.trslt{
+    top: 30%;
+    position: absolute;
+    animation: small2 68s  infinite alternate linear;
+    z-index: 100;
+    text-shadow: 1px 1px 4px #000000;
+}
+.makebeuty{
+    transition: all 0.5s ease-in-out;
+}
+.makebeuty:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.metheor{
+    background-image: url(../assets/img/small2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: small3R 40s  infinite alternate linear;
+    background-size: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 140px;
+    font-size: 20px;
+}
 .header h1{
     z-index: 2;
     margin-top: 2%;
     font-size: 90px;
     display: flex;
     justify-content: center;
+    
 }
 .small{
     background-position:center;
@@ -306,6 +335,7 @@ nav{
     opacity: 0;
     transition: all 2s ease-in-out;
 }
+
 .predicts{
     min-width: 20%;
     max-width: 42%;
@@ -401,6 +431,58 @@ nav{
     border-radius: 8px;
     opacity: 0;
 }
+.beutyTXT{
+    background-color:#242b46f1;
+    box-shadow: 0 0 30px #0d4d8169;
+    border: solid 2px  rgb(19, 23, 46);
+    font-size: 30px;
+    padding: 0.5%;
+    max-width: 50%;
+    min-width: 50%;
+    min-height: 5%;
+    text-align: center;
+    border-radius: 4px;
+}
+.fp{
+    position: absolute;
+    display: none;
+    opacity: 100%;
+    margin-top: 13%;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 95;
+    transition: all 3s ease-in-out;
+}
+
+.download{
+    width:50%;
+    height: 60px;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 4px solid #001259;
+}
+.downloadIMAGE{
+    width:10%;
+    height: 100%;
+    background: rgb(91,11,222);
+    background: linear-gradient(90deg, rgba(91,11,222,1) 0%, rgba(135,8,218,1) 35%);
+    border-radius: 4px;
+    animation: dwnld 10s  1 forwards ease-in-out;
+}
+.downloadTXT{
+    width:50%;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 4px #000000;
+    font-size: 25px;
+}
 .circle1{
 }
 .circle2{
@@ -408,6 +490,32 @@ nav{
 }
 .circle3{
     animation-delay: 0.9s;
+}
+@keyframes dwnld{
+    0%{
+        width:0%;
+    }
+    10%{
+        width:15%;
+    }
+    30%{
+        width:30%;
+    }
+    40%{
+        width:45%;
+    }
+    80%{
+        width:55%;
+    }
+    95%{
+        width:80%;
+    }
+    98%{
+        width:90%;
+    }
+    100%{
+        width:100%;
+    }
 }
 @keyframes c1{
     0%{

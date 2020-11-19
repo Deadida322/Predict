@@ -28,7 +28,7 @@ function getRandomInRange(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 function generater(firstInt){
-    let nextInt = getRandomInRange(1, 5);
+    let nextInt;
     for(let i = 1; i <=5; i++){
         nextInt = getRandomInRange(1, 5);
         if (nextInt == firstInt){
@@ -214,5 +214,52 @@ $('.navbar__item2').on("click", function fadeou2 (e){
         txtD = 'Попробуй в другой раз';
     }
     setTimeout(() => $('.digitTXT').html(txtD),1500);}, 2500);
+    
+});
+$('.makebeuty').on("click", function fadeou3 (e){
+    let bg = $('.background');
+    let fg = $('.foreground');
+    let colors = $('.colors');
+    bg.css({
+        transform: 'rotate(-15deg)',
+    });
+    fg.css({
+        transform: 'rotate(-15deg)',
+    });
+    colors.css({
+        transform: 'rotate(-15deg)',
+    });
+    let nav = $('nav');
+    let fp = $('.fp');
+    let jp = $('.jupiter');
+    h = $('h1'); 
+
+
+    setTimeout(() => nav.fadeOut(0), 1800);
+    setTimeout(() => h.fadeOut(100), 1600);
+    setTimeout(() => h.fadeIn(100), 1800);
+    setTimeout(() => jp.fadeOut(100), 3000);
+    setTimeout(() => h.html('Сделать красиво'), 1800);
+    setTimeout(() => $('.downloadTXT').html('Устраняем неприятности...'), 3200)
+    setTimeout(() => $('.downloadTXT').html('Закрываем долги...'), 5400)
+    setTimeout(() => $('.downloadTXT').html('Молимся богу...'), 7600)
+    setTimeout(() => $('.downloadTXT').html('Вмещаем все знания человечества...'), 9800)
+    setTimeout(() => $('.downloadTXT').html('Успешно!'), 12000)
+    setTimeout(() =>fp.css({
+        display: 'flex'
+    }),1800);
+    if (document.documentElement.clientWidth > 500){
+        jp.css({
+            transform: 'rotate(180deg) scale(2)',
+            left: '200vw'
+        });
+    } else if (document.documentElement.clientWidth <= 500){
+        jp.css({
+            transform: 'rotate(180deg) scale(2)',
+            left: '400vw'
+        });
+    };
+
+
     
 });
